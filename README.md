@@ -1,2 +1,2 @@
 # Proyecto-stage
-Este repositorio es diseñado para la asignatura de programación y diseño de aplicaciones. 
+Este desarrollo web esta diseñado para crear una marca de accesorios y productos dirigidos a bailarinas.
