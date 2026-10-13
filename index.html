@@ -15,14 +15,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--Es la configuracion de toda la pagina web-->
 
+  <title>STAGE | Todo para las bailarinas</title>
+<!--El tag title es para como quiero que se muestre en la web-->
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
-
-<title>STAGE | Todo para las bailarinas</title>
-<!--El tag title es para como quiero que se muestre en la web-->
 
 </head>
 
@@ -62,11 +62,13 @@
 
     </nav>
 
-    <button id="menu-toggle" class="menu-toggle" 
-    aria-label="Abrir menú" aria-expanded="false" 
-    aria-controls="mobile-menu">☰</button>
-    </div>
+    <!--Boton menu movil-->
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
 
+    <!--navegacion movil-->
     <nav id="mobile-menu" class="mobile-nav">
       <ul>
         <li>
@@ -91,38 +93,121 @@
 
     </header>
 
+    <!--INICIO MAIN(PRINCIPAL) DEL DESARROLLO WEB-->
     <main>
 
         <!--SECCION CARRUSEL-->
 
-    <section id="carrusel" class="carousel-section container">
-        <h2>More than Dance</h2>
+    <section id="inicio" class="hero-section">
         <div class="carousel-track" id="carouseltrackebc">
 
             <!--Primera imagen del giro-->
             <div class="carousel-slide">
                 <img src="img/foto2.jpg" alt="imagen stage1">
+                <div class="slide-overlay">
+                        <span class="badge">Crecimiento</span>
+                        <h1>More than <span class="highlight-yellow">Dance.</span></h1>
+                        <p>Accesorios diseñados para acompañarte en cada paso dentro y fuera del escenario.</p>
+                        <a href="#servicios" class="btn-hero">Ver productos</a>
+                    </div>
             </div>
 
             <!--Segunda imagen del giro-->
             <div class="carousel-slide">
-                <img src="img/foto.jpg" alt="imagen stage2">
+                <img src="img/foto3.jpg" alt="imagen stage2">
+                <div class="slide-overlay">
+                        <span class="badge">Compromiso</span>
+                        <h1>More than <span class="highlight-yellow">Essentials</span></h1>
+                        <p>Diseños funcionales y minimalistas creados para acompañarte en cada entrenamiento, competencia y momento dentro y fuera del estudio.</p>
+                        <a href="#servicios" class="btn-hero">Descubre la coleccion</a>
+                    </div>
             </div>
 
             <!--Tercera imagen del giro-->
             <div class="carousel-slide">
-                <img src="img/foto3.jpg" alt="imagen stage3">
+                <img src="img/foto.jpg" alt="imagen stage3">
+                <div class="slide-overlay">
+                        <span class="badge">Pasión</span>
+                        <h1>More than <span class="highlight-yellow">Passion.</span></h1>
+                        <p>La danza es disciplina, entrega y una forma de expresar quién eres. Lleva contigo aquello que te inspira a seguir creciendo.</p>
+                        <a href="#servicios" class="btn-hero">Conoce STAGE</a>
+                    </div>
             </div>
 
 
         </div>
 
+         <!-- Botones de Navegación del Carrusel -->
+            <button id="btn-prev" class="carousel-arrow prev" aria-label="Imagen anterior">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button id="btn-next" class="carousel-arrow next" aria-label="Imagen siguiente">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+        <!-- Puntos Indicadores -->
+            <div class="carousel-dots" id="carousel-dots">
+                <button class="dot active" aria-label="Ir a diapositiva 1"></button>
+                <button class="dot" aria-label="Ir a diapositiva 2"></button>
+                <button class="dot" aria-label="Ir a diapositiva 3"></button>
+            </div>
 
     </section>
 
+    <!-- SECCIÓN DE SERVICIOS -->
+        <section id="servicios" class="servicios-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>NUESTROS SERVICIOS</h2>
+                    <h3>Tu pasión te mueve. STAGE te acompaña</h3>
+                </div>
 
+    <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-couch"></i></div>
+                        <h4>¿Que somos?</h4>
+                        <p>Es una comunidad alrededor de la danza y ofrecer productos con los que las bailarinas puedan sentirse identificadas, representadas y orgullosas de lo que hacen.</p>
+                    </div>
 
-<p>This is a paragraph.</p>
+    <div class="card">
+                        <div class="card-icon red"><i class="fa-solid fa-volume-high"></i></div>
+                        <h4>Accesorios para bailarinas</h4>
+                        <p>Marca de accesorios y productos dirigidos a bailarinas, que les permita expresar su pasión por la danza tanto dentro como fuera del escenario.</p>
+                    </div>
+
+    <div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-microchip"></i></div>
+                        <h4>Valores</h4>
+                        <p>Inspirada en disciplina, esfuerzo y superar retos.</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+     <!-- SECCIÓN NOSOTROS -->
+        <section id="nosotros" class="nosotros-section">
+            <div class="container nosotros-inner">
+                <div class="nosotros-img">
+                    <img src="img/foto4.jpeg" alt="STAGE">
+                </div>
+                <div class="nosotros-info">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <h3>More than dance.</h3>
+                    <p>STAGE<strong> es mas que una marca de accesorios</strong>, es una forma de expresar tu pasión por la danza. Creada por Frida Sofia.</p>
+                    <p>Creamos productos minimalistas, modernos y funcionales que acompañan a las bailarinas dentro y fuera del escenario, celebrando su crecimiento, compromiso y dedicación en cada paso de su camino.</p>
+                    <div class="stats">
+                        <div class="stat-box">
+                            <span class="stat-num yellow">Muchos</span>
+                            <span class="stat-lbl">Diseños</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num red">100%</span>
+                            <span class="stat-lbl">Satisfacción</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
     <footer>
